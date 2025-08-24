@@ -1,13 +1,7 @@
-// User configuration for the startpage - update the palette, location, and your preferred tabs, categories, and links
+// latte / frappe / macchiato / mocha
+const palette = macchiato;
 
-// Define preferred palette for light and dark mode
-// Available themes: latte, frappe, mocha, macchiato
-const preferredLightTheme = latte;
-const preferredDarkTheme = macchiato;
-
-let palette = initThemeSystem(preferredLightTheme, preferredDarkTheme);
-
-const default_configuration = {
+const default_config = {
   overrideStorage: true,
   temperature: {
     location: "Minneapolis",
@@ -17,14 +11,6 @@ const default_configuration = {
     format: "k:i p",
     icon_color: palette.maroon,
   },
-  additionalClocks: [
-    {
-      label: "UA",
-      timezone: "Europe/Kyiv",
-      format: "h:i",
-      icon_color: palette.peach,
-    },
-  ],
   search: {
     engines: {
       p: ["https://www.perplexity.ai/search/?q=", "PerplexityAI"],
